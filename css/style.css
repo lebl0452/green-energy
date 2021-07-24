@@ -1,0 +1,277 @@
+/*
+Fonts:
+    'Cabin', sans-serif
+    'Roboto', sans-serif
+
+Colors:
+    Light Green: #99E2B4
+    Dark Green: #036666
+    Gray: #ECECEC
+*/
+
+/* General Settings */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: 'roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Header--------------*/
+
+header {
+    background-color: #036666;
+}
+
+.logo {
+    width: 5rem;
+    margin: 1rem 1rem 1rem 2rem;
+    cursor: pointer;
+}
+
+header h1 {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    left: 4.5rem;
+    color: white;
+    font-weight: 100;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/*Nav----------------*/
+
+nav {
+    margin: 1rem auto 1rem 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+nav li {
+    margin-top: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: 'roboto', sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #99E2B4;
+}
+
+nav a:active {
+    color: #ececec;
+}
+
+/*Buttons---------------*/
+
+.btns {
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.fa-wind {
+    font-size: 5rem;
+    color: #036666;
+}
+
+.fa-wind:hover {
+    color: #99E2B4;
+}
+
+.fa-solar-panel {
+    font-size: 5rem;
+    color: #036666;
+}
+
+.fa-solar-panel:hover {
+    color: #99E2B4;
+}
+
+.fa-water {
+    font-size: 5rem;
+    color: #036666;
+}
+
+.fa-water:hover {
+    color: #99E2B4;
+}
+
+button {
+    background-color: #ECECEC;
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+#active-button {
+    color: white;
+    background-color: #036666;
+}
+
+/*Content*/
+
+article {
+    background-color: #ECECEC;
+    padding: 1.5rem;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+h2 {
+    font-family: 'roboto', sans-serif;
+    margin-bottom: 1rem;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+article img {
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+}
+
+/*Footer*/
+
+footer section {
+    padding: 1rem;
+    background-color: #036666;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer i {
+    font-size: 3rem;
+    color: #99E2B4;
+}
+
+footer h3 {
+    color: white;
+    background-color: black;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: 'roboto', sans-serif;
+    font-weight: 100;
+}
+
+footer i:hover {
+    color: white;
+}
+
+footer i:active {
+    color: #ececec;
+}
+
+/* --------------------RESPONSIVE DESIGN---------------------- */
+
+/***************************************************
+				Tablet and up - 960px / 60rem
+****************************************************/
+@media only screen and (min-width: 60rem) {
+
+    /*Header------*/
+
+    header {
+        background-color: #036666;
+    }
+
+    header section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 6rem;
+        margin: 1rem 3rem 1rem 0rem;
+    }
+
+    header h1 {
+        display: block;
+        position: relative;
+        top: 2rem;
+        left: -6rem;
+    }
+
+    /*Nav---------*/
+
+    nav {}
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    nav li {
+        margin: 0 2rem 0 2rem;
+    }
+
+    nav a {}
+
+    /*Buttons------*/
+
+    .btns {
+        justify-content: center;
+    }
+
+    button {
+        margin: 0 2rem 0 2rem;
+    }
+
+    /*Content------*/
+
+    article {
+        padding: 3rem;
+        width: 50rem;
+        margin: 2rem auto 2rem auto;
+        border-radius: 2rem;
+    }
+
+    h2 {}
+
+    article img {
+        float: right;
+        max-width: 30rem;
+        margin: 0 0 0 1.5rem;
+    }
+
+    p {}
+
+    /*Footer-------*/
+
+    footer section {
+        justify-content: center;
+    }
+
+    footer a {
+        margin: 0 3rem 0 3rem;
+    }
+
+}
